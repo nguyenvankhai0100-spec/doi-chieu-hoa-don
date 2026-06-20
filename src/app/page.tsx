@@ -830,16 +830,16 @@ for (let row = 1; row <= range.e.r; row++) {
 </h3>
 
     {Object.entries(errorStats).map(
-      ([status, count]) => (
-        <div
-          key={status}
-          className="flex justify-between border-b py-1 text-black"
-        >
-          <span>{status}</span>
-          <span>{Number(count)}</span>>
-        </div>
-      )
-    )}
+  ([status, count]) => (
+    <div
+      key={String(status)}
+      className="flex justify-between border-b py-1 text-black"
+    >
+      <span>{String(status)}</span>
+      <span>{Number(count)}</span>
+    </div>
+  )
+)}
   </div>
 
 </div>
