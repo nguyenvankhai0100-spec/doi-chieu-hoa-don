@@ -208,7 +208,7 @@ const totalMisaAmount = misaInvoices.reduce(
   0
 );
 const errorStats = compareResults.reduce(
-  (acc, item) => {
+  (acc: Record<string, number>, item) => {
     acc[item.status] =
       (acc[item.status] || 0) + 1;
 
