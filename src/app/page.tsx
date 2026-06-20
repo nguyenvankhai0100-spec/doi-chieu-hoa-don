@@ -836,7 +836,7 @@ for (let row = 1; row <= range.e.r; row++) {
           className="flex justify-between border-b py-1 text-black"
         >
           <span>{status}</span>
-          <span>{count}</span>
+          <span>{Number(count)}</span>>
         </div>
       )
     )}
