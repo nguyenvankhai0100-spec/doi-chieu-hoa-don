@@ -214,7 +214,7 @@ const errorStats = compareResults.reduce(
 
     return acc;
   },
-  {}
+  {} as Record<string, number>
 );
 const paginatedResults = filteredResults.slice(
   (currentPage - 1) * ITEMS_PER_PAGE,
